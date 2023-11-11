@@ -1,0 +1,935 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Alegreya';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+.main-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #C8191C;
+}
+
+.sub-title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 10.5rem;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 114px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.common-btn {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    padding: 1.5rem 7rem;
+    background: #C8191C;
+    width: 300px;
+
+}
+
+.common-btn:hover {
+    color: black;
+}
+
+
+/*************Header-Section*************/
+header {
+    position: fixed;
+    width: 100%;
+    top: 20px;
+    left: 0;
+}
+
+header ul li a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-right: 5rem;
+}
+
+#navbarSupportedContent ul li a:hover {
+    color: red;
+}
+
+
+
+
+/****************************************/
+
+/***********Hero-Section*****************/
+#hero {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+#hero::before {
+    content: '';
+    top: 0;
+    background-image: url(../images/hero-banner.png);
+    background-position: top center;
+    background-size: cover;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#hero .hero-data {
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 999;
+}
+
+.hero-data h1 {
+    padding-top: 41rem;
+    font-weight: 700;
+    font-size: 130px;
+    line-height: 160px;
+    /* z-index: 999; */
+    position: relative;
+}
+
+.hero-data h1 span {
+    color: #C8191C;
+}
+
+.hero-data p {
+    padding: 5.5rem 382px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.hero-data .common-btn {
+    z-index: 999;
+    display: inline-block;
+}
+
+
+/****************************************/
+
+/**********Discover-Section**************/
+#discover {
+    padding-top: 20rem;
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
+}
+
+.container .discover-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discover-data img {
+    margin: 0 auto;
+}
+
+.discover-data h3 {
+    margin-top: 2rem;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 73px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.about-img {
+    padding-top: 20rem;
+}
+
+.about-img p {
+    margin-top: 10rem;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 17.7rem;
+}
+
+#discover .main-title {
+    text-align: left;
+}
+
+#discover .sub-title {
+    text-align: left;
+}
+
+#discover .common-btn {
+    display: inline-block;
+}
+
+.hr-1 {
+    border-right: 1px solid #fff;
+    height: 50.6rem;
+    padding-right: 11.5rem;
+
+}
+
+.hr-2 {
+    padding-left: 11.5rem;
+}
+
+
+/****************************************/
+
+
+/*****************Super-Section*************/
+#super {
+    padding-top: 20rem;
+    background: linear-gradient(180deg, #000000 37.37%, #C8191C 231.27%);
+
+}
+
+#super h3 {
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 191px;
+    color: #FFFFFF;
+}
+
+#super p {
+    margin-top: 11.5rem;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0 207px 0 0;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#super h4 {
+    margin-top: 10.4rem;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 191px;
+    color: #FFFFFF;
+}
+
+.super-img {
+    display: flex;
+    padding: 0px 0 0 70px;
+}
+
+
+/****************************************/
+
+
+/*************Service-Section************/
+
+#service {
+    padding-top: 20rem;
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+}
+
+
+#service .row>* {
+    padding-bottom: 15rem;
+}
+
+
+#service .row>*:nth-child(odd) {
+    padding-right: 7.5rem;
+    padding-left: 4.2rem;
+}
+
+#service .row>*:nth-child(even) {
+    padding-left: 7.5rem;
+    padding-right: 4.2rem;
+}
+
+.service-data {
+    border: 2px solid #fff;
+    padding: 5rem 6rem;
+}
+
+.service-data img {
+    width: 100%;
+}
+
+
+.service-data h4 {
+    margin-top: 5rem;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.service-data p {
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+
+/****************************************/
+/**************Why-Section***************/
+#why {
+    padding-top: 5rem;
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+}
+
+#why .why-img {
+    padding-top: 6.5rem;
+    padding-right: 15.5rem;
+}
+
+.why-img img {
+    margin: 0 auto;
+}
+
+.why-img h4 {
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.why-img p {
+    margin-top: 3rem;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+/****************************************/
+/***********Horoscope-Section***************/
+#horoscope {
+    padding-top: 20rem;
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+}
+
+#horoscope .horo-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b {
+    padding-bottom: 10rem;
+}
+
+.horo-desc h3 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 73px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#horoscope .horo-img .horo-desc {
+    width: 63%;
+    padding: 0 55px 0 57px;
+}
+
+.horo-desc p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#horoscope .width {
+    width: 30%;
+}
+
+
+#horoscope .common-btn {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.number-box {
+    display: flex;
+    column-gap: 40px;
+}
+
+.number h2 {
+    padding-top: 20rem;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #C8191C;
+    text-align: center;
+}
+
+.number p {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 136px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+
+
+/*******************************************/
+
+
+/***************Appointment-Section***************/
+#appointment {
+    padding-top: 20rem;
+    position: relative;
+    padding-bottom: 20rem;
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+}
+
+#appointment .main-title {
+    padding-top: 22.4rem;
+}
+
+#appointment .main-title {
+    text-align: left;
+}
+
+#appointment .sub-title {
+    padding-right: 6rem;
+    text-align: left;
+}
+
+
+#appointment h3 {
+    margin-top: 3rem;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.input-box {
+    margin-top: 3rem;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    padding: 3.3rem 10rem 3.3rem 3rem;
+    border: 1px solid #FFFFFF;
+}
+
+.Input {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.input-box i {
+    color: #fff;
+}
+
+#appointment .common-btn {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+
+#appointment i {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    margin: 35px 0 0px 336px;
+}
+
+
+
+/************************************************/
+/*****************Let-Section*****************/
+#let {
+    padding-top: 13rem;
+    padding-bottom: 10rem;
+    background: linear-gradient(180deg, #514242 -74.63%, #2E0A0A 38.7%, #000000 151.34%);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 9;
+}
+
+
+#let::before {
+    content: '';
+    top: 0;
+    background-image: url(../images/lets-banner.png);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+
+#let h2 {
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 114px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#let p {
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 382px;
+    margin-bottom: 5rem;
+}
+
+
+#let .common-btn {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+/************************************************/
+
+/**************Price-Section****************/
+#price {
+    padding-top: 20rem;
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+}
+
+#price .price-data {
+    border: 1px solid #fff;
+    margin-right: 9rem;
+    padding: 6rem 7.7rem;
+}
+
+#price .price-data:hover {
+    background-color: #C8191C;
+}
+
+.price-data h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.price-data h3 span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.price-data h3 {
+    margin: 3rem 0rem;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 98px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.price-data .price-btn {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.price-data p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 11px 0px 0 20px;
+}
+
+.price-data .common-btn {
+    margin-top: 8rem;
+    padding: 1.5rem 8.7rem;
+    display: inline-block;
+}
+
+
+
+
+.price-data:hover .common-btn {
+    background-color: #fff;
+    color: red;
+}
+
+
+
+/*******************************************/
+
+
+/*****************Client-Section**************/
+#client {
+    padding-top: 20rem;
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+}
+
+#client h2 {
+    font-weight: 700;
+    font-size: 14rem;
+    line-height: 19.1rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.client-arrow img {
+    margin: 0 auto;
+    padding: 10rem 0rem 15rem 0rem;
+}
+
+#client .client-tag img {
+    margin-left: -3rem;
+    margin-top: 6rem;
+}
+
+
+#client .swiper-slide {
+    margin-left: 1rem;
+}
+
+
+#client .client-slide {
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+
+#client .swiper-button-next,
+#client .swiper-button-prev {
+    top: 25rem;
+}
+
+#client .swiper-button-prev::after,
+#client .swiper-button-next::after {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+
+.client-desc p {
+    margin-top: 10rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    /* padding-right: 4.3rem; */
+}
+
+.client-desc {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.client-desc::before {
+    background-image: url(../images/client-tag.png);
+    background-position: left;
+    background-size: cover;
+    content: '';
+    top: -7rem;
+    left: -3.8rem;
+    width: 30%;
+    height: 83%;
+    position: absolute;
+    /* opacity: 0.2; */
+    z-index: 99;
+
+}
+
+.client-desc h3 {
+    margin-top: 1.5rem;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    color: #FFFFFF;
+}
+
+
+/*******************************************/
+
+
+/******************Blog-Section**************/
+#blog {
+    padding: 20rem 0rem;
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+}
+
+.blog-desc h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-right: 2.1rem;
+    margin-top: 6rem;
+}
+
+.blog-desc p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 1rem;
+    margin-top: 2rem;
+}
+
+.blog-desc p a:hover {
+    color: red;
+}
+
+/*******************************************/
+
+
+/*******************************************/
+footer {
+    padding-bottom: 15.1rem;
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+}
+
+.footer-top {
+    padding: 8rem 0rem;
+}
+
+.footer-top p {
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 13rem;
+}
+
+.footer-top h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-top a {
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.contact-link {
+    display: flex;
+}
+
+.contact-link img {
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+.contact-link img:hover {
+    color: red;
+}
+
+.footer-top a:hover {
+    color: red;
+}
+
+.footer-bottom {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 4.5rem;
+}
+
+
+hr {
+    border: 2px solid #fff;
+    margin: 0;
+}
+
+
+
+/*******************************************/
+@media screen and (min-width: 1800px) {
+    .container {
+        max-width: 170rem;
+    }
+}
+
+@media screen and (max-width:1650px) {
+
+    .hero-data h1 {
+        padding-top: 28rem;
+        font-size: 94px;
+        line-height: 125px;
+    }
+
+
+    .hero-data p {
+        padding: 5.3rem 218px;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+    }
+
+
+
+    .common-btn {
+        font-weight: 700;
+        font-size: 2.3rem;
+        line-height: 3.2rem;
+        padding: 1.4rem 6.8rem;
+    }
+
+
+    #discover {
+        padding-top: 18rem;
+    }
+
+    /* section .container {
+        width: 82%;
+    } */
+
+
+    .about-img p {
+        margin-top: 9rem;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 23.5px;
+        padding-right: 10.7rem;
+    }
+
+
+
+
+    .sub-title {
+        margin-top: 1.8rem;
+        margin-bottom: 3.5rem;
+        font-size: 76px;
+        line-height: 105px;
+
+    }
+
+
+    .about-img {
+        padding-top: 18rem;
+    }
+
+    .discover-data h3 {
+        margin-top: 1.8rem;
+        font-size: 44px;
+        line-height: 68px;
+    }
+
+
+    .hr-1 {
+        padding-right: 10.5rem;
+    }
+
+    .hr-2 {
+        padding-left: 10.5rem;
+    }
+
+
+
+    #super h3 {
+        font-size: 110px;
+        line-height: 170px;
+    }
+
+
+    #super h4 {
+        margin-top: 9rem;
+        font-size: 110px;
+        line-height: 170px;
+
+    }
+
+
+    #super p {
+        margin-top: 6.5rem;
+        font-size: 17px;
+        padding: 0 86px 0 0;
+        line-height: 23px;
+    }
+
+    #super .super-img {
+        width: 32%;
+    }
+
+
+    #service {
+        padding-top: 18rem;
+    }
+
+
+
+}
